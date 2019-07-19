@@ -20,23 +20,33 @@ int main(int argc, char *argv[])
             if (argument == "-l") {
                 while (getline(todoIn, read)) {
                     std::cout << std::to_string(++counter) + "- " + read << std::endl;
-                }if(counter == 0){
+                }
+                if (counter == 0) {
                     std::cout << "No TODOs for today :)" << std::endl;
                 }
                 return 0;
             }
         }
-            if(argc == 3){
-                std::string argument(argv[1]);
-                if(argument == "-a"){
-                    std::ofstream todoOut("../TodoList.txt", std::ios::app);
-                    todoOut << "\n" << argv[2];
-                }
+        if (argc == 3) {
+            std::string argument(argv[1]);
+            if (argument == "-a") {
+                std::ofstream todoOut("../TodoList.txt", std::ios::app);
+                todoOut << "\n" << argv[2];
             }
-            else {
-                std::cout << "not supported argument" << std::endl;
-                return 2;
+        }
+        if (argc == 2) {
+            std::string argument(argv[1]);
+            if (argument == "-a") {
+                std::cout << "Unable to add: no task provided" << std::endl;
             }
+        }
+        if (argc == 2) {
+            std::string argument(argv[1]);
+            if (argument == "-r") {
+//                while(getline(todoIn, read)) {}
+                std::cout << "To be implemented" << std::endl;
+            }
+        }
 
     } else {
         std::cout << "File cannot be found!" << std::endl;
