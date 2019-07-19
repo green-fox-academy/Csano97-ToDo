@@ -1,0 +1,3 @@
+C:/Users/kormi/greenfox/Todo/Csano97-ToDo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/kormi/greenfox/Todo/Csano97-ToDo/cmake-build-debug/CMakeFiles/Todo.dir
+C:/Users/kormi/greenfox/Todo/Csano97-ToDo/cmake-build-debug/CMakeFiles/edit_cache.dir
